@@ -20,7 +20,7 @@ end
 
 source.is_available = function(self)
   -- client is stopped.
-  if self.client.is_stopped() or not self.client.name == "copilot" then
+  if self.client:is_stopped() or not self.client.name == "copilot" then
     return false
   end
 
